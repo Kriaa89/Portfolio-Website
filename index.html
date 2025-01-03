@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#home" id="navLink1" onmouseover="navOver('navLink1')" onmouseout="navOut('navLink1')">Home</a>
+            </li>
+            <li><a href="#about" id="navLink2" onmouseover="navOver('navLink2')"
+                    onmouseout="navOut('navLink2')">About</a></li>
+            <li><a href="#skills" id="navLink3" onmouseover="navOver('navLink3')"
+                    onmouseout="navOut('navLink3')">Skill</a></li>
+            <li><a href="#Certifications" id="navLink4" onmouseover="navOver('navLink4')"
+                    onmouseout="navOut('navLink4')">Certifications</a></li>
+            <li><a href="#projects" id="navLink5" onmouseover="navOver('navLink5')"
+                    onmouseout="navOut('navLink5')">Projects</a></li>
+            <li><a href="#contact" id="navLink6" onmouseover="navOver('navLink6')"
+                    onmouseout="navOut('navLink6')">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- home section -->
+    <section id="home">
+        <div class="container">
+            <div class="hero-content d-flex flex-wrap-reverse">
+                <div class="hero-text animate">
+                    <h1>ben slimen <br><span>wael</span></h1>
+                    <h2>creating apps to perfection</h2>
+                    <div class="hero-buttons">
+                        <a href="#" class="btn" onmouseover="buttonOver(this)" onmouseout="buttonOut(this)"
+                            onclick="downloadFile()">
+                            <i class="fas fa-download"></i>
+                            Download CV
+                        </a>
+                        <a href="#contact" class="btn1" onmouseover="buttonIn(this)" onmouseout="buttonOute(this)">
+                            <i class="fas fa-envelope"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image animate">
+                    <div class="image-container" onmouseover="over(this)" onmouseout="out(this)">
+                        <img src="./assets/images/365446214_3036935756436358_7466039178211679446_n.jpg"
+                            alt="Abdallah Yessine Kriaa">
+                    </div>
+                    <div class="badge1">OpenToWork</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about me section -->
+    <section id="about">
+        <div class="container animate">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>Hey there! I'm Wael, a 21-year-old web development enthusiast with a passion for crafting interactive
+                    and engaging
+                    online experiences. Currently, I'm diving deep into the world of coding at Coding Dojo, where I'm
+                    constantly pushing my
+                    boundaries and expanding my skillset. Beyond the code, I'm a huge fan of the gaming world as well as
+                    chess.</p>
+            </div>
+        </div>
+    </section>
+    <!-- skills section -->
+    <section id="skills">
+        <div>
+            <div class="d-flex flex-column justify-content-center">
+                <h1 class=" white hero-text align-self-center ">Skills</h1>
+                <p class="align-self-center gray">Expertise and technologies I work with</p>
+                <div class=" d-flex flex-column align-self-center gap">
+                    <div class="left d-flex gap align-self-center animate">
+                        <div class="card-1">
+                            <p><i class="fab fa-html5" id="fa-html5"></i> <span class="bold">HTML/CSS</span></p>
+                            <span class="bar"><span class="html animate"></span></span>
+                            <p class="gold"><span>90</span>%</p>
+                            <p>Proficient in creating responsive and accessible web layouts.</p>
+                        </div>
+                        <div class="card-1">
+                            <p><i class="fab fa-js" id="js"></i> <span class="bold">JavaScript</span></p>
+                            <span class="bar"><span class="javascript animate"></span></span>
+                            <p class="gold"><span>85</span>%</p>
+                            <p>Experienced in modern ES6+ features and DOM manipulation.</p>
+                        </div>
+                    </div>
+                    <div class="right d-flex align-self-center gap animate">
+                        <div class="card-1">
+                            <p><i class="fab fa-bootstrap" id="bootstrap"></i> <span class="bold">BootStrap</span></p>
+                            <span class="bar"><span class="bootstrap animate"></span></span>
+                            <p class="gold"><span>70</span>%</p>
+                            <p>Skilled in rapid prototyping and responsive design with Bootstrap.</p>
+                        </div>
+                        <div class="card-1">
+                            <p><i class="fab fa-git-alt" id="git"></i> <span class="bold">Git</span></p>
+                            <span class="bar"><span class="Git animate"></span></span>
+                            <p class="gold"><span>60</span>%</p>
+                            <p>Experienced in version control and collaborative development.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- certifications section -->
+    <section id="Certifications">
+        <div class="con2">
+            <h2>Certifications</h2>
+            <div class="certification-grid animate">
+                <div class="certfication-card">
+                    <h3>coding dojo webfundamentals</h3>
+                    <p>Issued by coding dojo</p>
+                    <p>Valid from 26/2024</p>
+                    <a href="https://login.codingdojo.africa/dashboard" class="btn2">Verify Certification</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- project section -->
+    <section id="projects">
+        <div class="d-flex flex-column gap flex-wrap align-items-center">
+            <h1 class="hero-text align-self-center">Projects</h1>
+            <p class="hero-text align-self-center gray">a group of project syples you can check</p>
+            <div class="d-flex gap justify-content-center flex-wrap">
+                <div class="project-card d-flex flex-column c1 animate flex-wrap">
+                    <img src="./assets/images/weather.png" alt="" class="eve" onclick="expand('#content3')">
+                    <div class="maincontent d-flex flex-column gap" id="content3">
+                        <p class="gold">DojoWeather</p>
+                        <p>a weather web site created as an asignment in the coding dojo program</p>
+                        <p class="d-flex gap"><span>HTML</span> <span>CSS</span> <span>Javascript</span></p>
+                        <button><i class="fab fa-git-alt"></i> Code</button>
+                    </div>
+                </div>
+                <div class="project-card d-flex flex-column c2 animate">
+                    <img src="./assets/images/profile.png" alt="" class="eve" onclick="expand('#content2')">
+                    <div class="maincontent d-flex flex-column gap" id="content2">
+                        <p class="gold hidden">Profile Page</p>
+                        <p>a profile page created as an asignment in the coding dojo program.</p>
+                        <p class="d-flex gap"><span>HTML</span> <span>CSS</span> <span>Javascript</span></p>
+                        <button><i class="fab fa-git-alt"></i> Code</button>
+                    </div>
+                </div>
+                <div class="project-card d-flex flex-column c3 animate">
+                    <img src="./assets/images/card.png" alt="" onclick="expand('#content1')">
+                    <div class="maincontent d-flex flex-column gap" id="content1">
+                        <p class="gold">User Card</p>
+                        <p>a user card created as an asignment in the coding dojo program</p>
+                        <p class="d-flex gap"><span>HTML</span> <span>CSS</span> <span>Javascript</span></p>
+                        <button><i class="fab fa-git-alt"></i> Code</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="d-flex flex-column justify-content-center gap">
+            <h2 class="hero-text align-self-center gold">Get In Touch</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" class="d-flex flex-column gap flex-wrap">
+                <input type="hidden" name="access_key" value="3069ef6d-2bd4-4a30-b746-109cede9b714">
+                <input type="email" name="email" value="Email">
+                <textarea name="msg">your comments</textarea>
+                <input type="submit" value="send" class="form-sub align-self-center">
+            </form>
+        </div>
+        <div class="soliacl-links">
+            <a href="https://github.com/wael-benslimen"><i class="fab fa-github"></i></a>
+            <a href="https://fr.linkedin.com"><i class="fab fa-linkedin"></i></a>
+            <a href="https://mail.google.com/mail/"><i class="fas fa-envelope"></i></a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ben slimen wael. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
